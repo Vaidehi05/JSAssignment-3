@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+  <title><%= title %></title>
+</head>
+<style>
+  <%- include('style.css') %>
+</style>
+
+<body>
+  <!-- Header Showcase -->
+  <section id="header">
+    <header>
+      <nav>
+        <div class="row clearfix"></div>
+        <img src="../images/logo1.png" class="logo">
+        <div class="wrapper">
+          <ul class="main-nav" id="check-class">
+            <li><a <% if(title == 'Home') { %> class="highlight" <% } %> href="/">HOME</a></li>
+            <li><a <% if(title == 'Cards') { %> class="highlight" <% } %> href="/card">CARDS</a></li>
+            <li><a <% if(title == 'Gallery') { %> class="highlight" <% } %> href="/gallery">IMAGES</a></li>
+            <li><a <% if(title == 'About') { %> class="highlight" <% } %> href="/about">ABOUT/BLOGS</a></li>
+            <li><a <% if(title == 'Contact') { %> class="highlight" <% } %> href="/contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="portrait">
+          <div class="hamburger-menu">
+            <img class="hamburger-logo" src="./images/menu.png" alt="menu">
+          </div>
+          <div class="ham-close">
+            <img class="ham-open-logo" src="./images/close.png" alt="menu">
+            <div class="list"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
